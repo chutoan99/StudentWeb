@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // display: flex;
+  // justify-content: space-between;
+  margin: 20px;
+}
+.form-student {
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  h3 {
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .infor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    label {
+      width: 100px;
+      float: left;
+      input[type="text"] {
+        width: 200px;
+        padding: 5px;
+      }
+      ::placeholder {
+        color: red;
+        opacity: 0.7;
+      }
+    }
+    span {
+      color: red;
+      margin-left: 10px;
+    }
+  }
+  button {
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 177px;
+    border-radius: 10px;
+  }
+}
+.list-student {
+  border: rgb(189, 44, 44);
+  width: 100%;
+  margin-left: 15px;
+  h3 {
+    justify-content: center;
+    display: flex;
+  }
+  table {
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    tr:first-child {
+      text-align: center;
+    }
+    tr {
+      td {
+        padding: 10px;
+      }
+      background-color: aqua;
+      i {
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .center {
+    display: flex;
+    justify-content: space-around;
+  }
+}

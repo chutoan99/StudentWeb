@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<title> Student Management </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="index.css">
+</head>
+<body onload="renderListStudents()">
+	<div class="form-student">
+		<h3>Thông Tin Sinh Viên</h3>
+		<div class="infor">
+			<label>Họ Và Tên</label>
+			<input type="text" id="full-name"><br/>
+			<span id="fullname-error"></span>
+		</div>
+		<div class="infor">
+			<label>Địa Chỉ Email</label>
+			<input type="text" id="email"><br/>
+			<span id="email-error"></span>
+		</div>
+		<div class="infor">
+			<label>Số Điện Thoại</label>
+			<input type="text" id="phone"><br/>
+			<span id="phone-error"></span>
+		</div>
+		<div class="infor">
+			<label>Đại Chỉ</label>
+			<input type="text" id="address"><br/>
+			<span id="address-error"></span>
+		</div>
+		<div class="infor">
+			<label>Giới Tính</label>
+			<input type="radio" name="gender" id="male" value="1">Nam
+			<input type="radio" name="gender" id="famale" value="2">Nữ<br/>
+			<span id="gender-error"></span>
+		</div>
+		<button onclick="save()">Lưu Lại</button>
+	</div>
+	<div class="list-student" id="hiden">
+		<h3>Danh Sách Sinh Viên</h3>
+		<table with="900" border="1" cellpadding="0" cellpadding="0" id="grid-content-student">
+		</table>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>
